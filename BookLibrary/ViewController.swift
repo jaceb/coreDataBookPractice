@@ -78,6 +78,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             
             print(self.book?[indexPath.row])
             self.book?.remove(at: indexPath.row)
+
             tableView.reloadData()
             
         }

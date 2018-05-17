@@ -36,6 +36,12 @@ class CoreDataHandler: NSObject {
     
     }
     
+    class func deleteObject() {
+        let fetchRequest: NSFetchRequest = Book.fetchRequest()
+        let context = getContext()
+        let object = try! context.fetch(fetchRequest)
+        context.delete(object)
+    }
     
 
     class func fetchObject() -> [Book]? {

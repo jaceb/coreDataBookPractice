@@ -13,6 +13,8 @@
 		030E4B21204CF8B500D150F2 /* BookLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 030E4B1F204CF8B500D150F2 /* BookLibrary.xcdatamodeld */; };
 		030E4B23204CF8B500D150F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030E4B22204CF8B500D150F2 /* Assets.xcassets */; };
 		030E4B26204CF8B500D150F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030E4B24204CF8B500D150F2 /* LaunchScreen.storyboard */; };
+		03446B6F204E539D00B75AB9 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03446B6E204E539D00B75AB9 /* CoreDataHandler.swift */; };
+		03C4E5F420AA4EF000211B2B /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4E5F320AA4EF000211B2B /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		030E4B22204CF8B500D150F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030E4B25204CF8B500D150F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		030E4B27204CF8B500D150F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03446B6E204E539D00B75AB9 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		03C4E5F320AA4EF000211B2B /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		030E4B17204CF8B500D150F2 /* BookLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				03446B70204E60D300B75AB9 /* customTableView */,
+				03C4E5F320AA4EF000211B2B /* BookCell.swift */,
 				030E4B18204CF8B500D150F2 /* AppDelegate.swift */,
 				030E4B1A204CF8B500D150F2 /* ViewController.swift */,
 				030E4B1C204CF8B500D150F2 /* Main.storyboard */,
@@ -63,8 +69,16 @@
 				030E4B24204CF8B500D150F2 /* LaunchScreen.storyboard */,
 				030E4B27204CF8B500D150F2 /* Info.plist */,
 				030E4B1F204CF8B500D150F2 /* BookLibrary.xcdatamodeld */,
+				03446B6E204E539D00B75AB9 /* CoreDataHandler.swift */,
 			);
 			path = BookLibrary;
+			sourceTree = "<group>";
+		};
+		03446B70204E60D300B75AB9 /* customTableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = customTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				030E4B1B204CF8B500D150F2 /* ViewController.swift in Sources */,
+				03446B6F204E539D00B75AB9 /* CoreDataHandler.swift in Sources */,
 				030E4B21204CF8B500D150F2 /* BookLibrary.xcdatamodeld in Sources */,
 				030E4B19204CF8B500D150F2 /* AppDelegate.swift in Sources */,
+				03C4E5F420AA4EF000211B2B /* BookCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RFCTCMHY2V;
 				INFOPLIST_FILE = BookLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jace.BookLibrary;
@@ -293,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RFCTCMHY2V;
 				INFOPLIST_FILE = BookLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jace.BookLibrary;

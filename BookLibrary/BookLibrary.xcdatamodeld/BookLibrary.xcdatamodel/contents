@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="bookTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCheckedOut" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="libraries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LibraryBuilding" inverseName="books" inverseEntity="LibraryBuilding" syncable="YES"/>
+    </entity>
+    <entity name="LibraryBuilding" representedClassName="LibraryBuilding" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasDarkOculator" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="libraries" inverseEntity="Book" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="LibraryBuilding" positionX="-54" positionY="-9" width="128" height="105"/>
+    </elements>
 </model>
